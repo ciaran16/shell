@@ -1,0 +1,17 @@
+description = "shell"
+version = "0.1"
+requires = "lwt sedlex uutf"
+archive(byte) = "shell.cma"
+archive(native) = "shell.cmxa"
+plugin(byte) = "shell.cma"
+plugin(native) = "shell.cmxs"
+
+package "unix" (
+  description = "shell"
+  version = "0.1"
+  requires = "shell lwt lwt.unix notty notty.unix notty.lwt"
+  archive(byte) = "shell_unix.cma"
+  archive(native) = "shell_unix.cmxa"
+  plugin(byte) = "shell_unix.cma"
+  plugin(native) = "shell_unix.cmxs"
+)

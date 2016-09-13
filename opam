@@ -1,0 +1,23 @@
+opam-version: "1.2"
+homepage:     "https://github.com/ciaran16/shell"
+dev-repo:     "https://github.com/ciaran16/shell.git"
+bug-reports:  "https://github.com/ciaran16/shell/issues"
+author:       "Ciaran Lawlor"
+maintainer:   "Ciaran Lawlor"
+license:      "ISC"
+
+build: [
+  "ocaml" "pkg/pkg.ml" "build" "--pinned" pinned
+]
+
+depends: [
+  "ocamlbuild" {build}
+  "ocamlfind" {build}
+  "topkg" {build}
+  "result"
+  "lwt"
+  "sedlex"
+  "uutf"
+  "notty"
+]
+available: [ocaml-version >= "4.02.0"]

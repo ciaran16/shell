@@ -1,0 +1,8 @@
+true : warn(+a-4-44-48), bin_annot, safe_string
+true : package(result)
+
+<src> : include
+<src/*> : package(lwt), package(sedlex), package(uutf)
+
+<unix> : include
+<unix/*> : package(lwt.unix), package(notty.unix), package(notty.lwt)

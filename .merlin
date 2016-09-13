@@ -1,0 +1,8 @@
+B _build/**
+FLG -w +a-4-44-48
+
+S src
+PKG lwt sedlex uutf
+
+S unix
+PKG lwt.unix notty notty.unix notty.lwt
